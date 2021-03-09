@@ -1,103 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background: #202020;
+    cursor: pointer;
 }
 
-.container {
+.menu{
     max-width: 1200px;
-    width: 100%;
     margin: auto;
-    padding: 0 15px;
+    cursor: pointer;
 }
-
-
-.menu {
+.button_div, .menu_close, .menu_open{
+    display: none;
+}
+.menu_ul{
     width: 100%;
-    min-height: 10px;
-    background: rgb(46, 46, 46);
-    padding: 20px 0;
-    position: fixed;
+    height: 45px;
+    background: #202020;
     top: 0;
     left: 0;
     z-index: 10;
 }
-
-.menu_navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menu_ul.active{
+    transform: translateX(-800%);
 }
-
+.ul{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+li,.links{
+    padding: 0 12px;
+}
+.links{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+}
+.links:hover{
+    text-decoration: none;
+    color: red;
+}
 .menu_ul ul {
     display: flex;
 }
+/*************************************************************************************************/
 
-.menu_ul ul a {
-    margin: 0 2px;
-    padding: 10px 15px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-}
-
-.menu_ul ul a:hover {
-    background: rgb(255, 70, 70);
-}
-
-.menu_ul {
-    width: 50%;
-}
-
-.menu_ul.active {
-    transform: translateX(-800%);
-}
-
-.menu_btn {
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 20px;
-    cursor: pointer;
-    outline: none;
-    border: 1px solid rgb(255, 255, 255);
-    background: rgb(63, 63, 63);
-    display: none;
-}
-
-
-
-@media (max-width: 700px) {
-    .menu_ul {
-        display: flex;
+@media(max-width: 840px) {
+    .button_div, .menu_close, .menu_open{
+        display: block;
+    } 
+    .menu_ul{
         width: 50%;
         height: 100vh;
+        background: #202020;
+        transform: translateX(0%);
         position: fixed;
         top: 0;
-        left: 0px;
-        background: rgb(49, 49, 49);
+        left: 0;
         align-items: center;
-        transform: translateX(+0%);
         transition: 1s;
     }
-
     .menu_ul ul {
         flex-direction: column;
-    }
-
-    .menu_btn {
-        display: block;
-    }
-
-    .ochadigan {
-        margin-right: 0px;
-    }
-    
-    .col-sm-6 {
-        max-width: 39% !important;
     }
 }

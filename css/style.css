@@ -1,333 +1,113 @@
 *{
-    margin: 0;
     padding: 0;
-    list-style: none;
+    margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
+    list-style: none;
 }
-.container{
-    max-width: 1200px;
+.header{
     width: 100%;
-    margin: auto;
-    padding: 0 15px;
+    
 }
-.menu{
+.box{
     width: 100%;
-    min-height: 10px;
-    background: rgb(46, 46, 46);
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    background: rgb(42, 153, 250);
+    height: 100px;
 }
-.menu_navbar {
-    width: 100%;
+ul{
     display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 33px;
+}
+.links{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 1s;
+}
+.links:hover{
+    color: rgb(0, 0, 255);
+}
+.fa-home:hover{
+    color: red !important;
+}
+.bagraund{
+    width: 100%;
+    background: url(../img/X-PC.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 600px;
+    cursor: pointer;
+}
+.pgd{
+    display: none;
+}
+.bagraund-centr{
+    width: 100%;
+    height: 100px;
+    background: rgb(42, 153, 250);
     justify-content: center;
     align-items: center;
-    height: 23px;
-    padding-top: 10px;
-}
-.menu_ul ul{
-    display: flex;
-    justify-content: center;
     text-align: center;
+    display: flex;
 }
-.menu_ul ul a {
-    margin: 0 2px;
-    padding: 15px 15px;
-    font-weight: 900;
+.bagraund-centr-title{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 0px 20px;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    display: flex;
 }
-.open_icon{
-    display: none;
+.samsung_s21{
+    width: 100%;
+    background: url(https://images.samsung.com/is/image/samsung/assets/uz_ru/galaxy-s21/home/Home_KVCarousel_PC_1440x640_wotext.jpg?$ORIGIN_JPG$) no-repeat center center / cover;
+    height: 600px;
+    padding-top: 250px;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-attachment: fixed;
 }
-.close_icon{
-    display: none !important;
+
+h1{
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
 }
-.text_div{
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    display: none;
-}
-.menu_ul{
-    width: 50%;
-    justify-content: center;
-    text-align: center;
-}
-.menu_ul.active{
-    transform: translateX(-800%);
-}
-.vidios {
-    color: red;
-    margin-left: 73%;
-    font-size: 27px;
-    display: none;
-}
-.vidios2{
-    color: red;
-    margin-left: 73%;
-    font-size: 27px;
-    display: none; 
-}
-.vidios3{
-    color: red;
-    margin-left: 73%;
-    font-size: 27px;
-    display: none; 
-}
-.vidios4{
-    color: red;
-    margin-left: 73%;
-    font-size: 27px;
-    display: none; 
-}
-.vidios5{
-    color: red;
-    margin-left: 73%;
-    font-size: 27px;
-    display: none; 
-}
-.links_migs{
-    color: white;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    cursor: default;
-}
-.menu_btn:hover{
-    background: red;
-}
-.social_network{
-    color: black;
-    font-size: 34px;
-    padding: 0 6px;
-    display: none;
-    transition: 0.5s;
-}
-.social_network:hover{
-    color: rgb(255, 0, 0);
-    font-size: 45px;
-    padding: 4px 4px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-}
-.social_networks {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 48px;
-}
-.social_network_T:hover{
-    border-radius: 50%;
-    color: rgb(0, 166, 255) !important;
-    background: rgb(255, 255, 255) !important;
-}
-.social_network_CH:hover{
-    border-radius: 50%;
-    color: rgb(255, 132, 0);
-    background: white;
-}
-.social_network_P:hover{
-    color: red;
-    border-radius: 50%;
-    background: white;
-}
-.icon_open {
-    color: white;
-    font-size: 31px;
+.samsung_p{
+    color: rgb(0, 0, 0);
+    padding-left: 15px ;
     cursor: pointer;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    
 }
-/**********************************************************************************************************************************/
-
-/*****************************************MEDIA*****************************************/
-
-
-@media (max-width: 850px){
-    .menu_ul{
-        display: none;
-        
-    }
-    .menu_ul.active{
-        display: block;
-        width: 50%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background:  #202020;
-        align-items: center;
-        transform:  translateX(+0%);
-        transition: 1s;
-        padding-top: 10px;
-    }
-    .social_network {
-        color: rgb(255, 255, 255);
-        font-size: 34px;
-        padding: 0 5px;
-        margin-left: 10px;
-        display: block;
-    }
-    .menu_ul ul {
-        flex-direction: column;
-    }
-    ol, ul {
-        padding-left: 1rem !important;
-    }
-    .open_icon{
-        display: block;
-        align-items: flex-start;
-    }
-    .close_icon{
-        display: block !important;
-    }
-    .menu_ul ul{
-        display: flex;
-        justify-content: start;
-        text-align: start;
-    }
-    .menu_navbar{
-        width: 100%;
-        display: flex;
-        justify-content: right;
-        padding-right: 100px;
-    }
-    .icon_open {
-        color: white;
-        font-size: 31px;
-        cursor: pointer;
-        margin-bottom: 10px;
-    }
-    .icon_close{
-        color: white;
-        font-size: 31px;
-        cursor: pointer;
-    }
-    .container-sm, .container {
-        max-width: 801px !important;
-    }
-    .vidios {
-        color: red;
-        margin-left: 73%;
-        font-size: 27px;
-        display: block;
-    }
-    .vidios2 {
-        color: red;
-        margin-left: 52%;
-        font-size: 27px;
-        display: block;
-    }
-    .vidios3 {
-        color: red;
-        margin-left: 70%;
-        font-size: 27px;
-        display: block;
-    }
-    .vidios4 {
-        color: red;
-        margin-left: 79%;
-        font-size: 27px;
-        display: block;
-    }
-    .vidios5 {
-        color: red;
-        margin-left: 78%;
-        font-size: 27px;
-        display: block;
-    }
-    .links_migs{
-        color: white;
-        text-decoration: none;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 24px;
-        cursor: default;
-    }
-    .h5{
-        color: white;
-        font-size: 24px;
-        margin-left: 50%;
-    }
+.more_link{
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 15px;
+    transition: 1s;
+    font-weight: 700;
 }
-@media (max-width: 750px){
-    .icon_open {
+.more_link:hover{
+    border: 1px #000 solid;
+    border-radius: 40%;
+    padding: 15px 15px 15px 15px;
+    color: red;
+}
+
+
+
+/********************************************************/
+
+@media (max-width: 900px) {
+    .links {
         color: white;
-        font-size: 31px;
-        cursor: pointer;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-    .vidios {
-        color: red;
-        margin-left: 70%;
-        font-size: 32px;
-        display: block;
-    }
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 26px;
-        cursor: default;
-        font-family: math;
-    }
-    .menu_ul ul a {
-        margin: 0 2px;
-        padding: 16px 9px;
-        font-weight: 900;
+        font-size: 15px;
         text-transform: uppercase;
-        color: black;
-        display: flex;
-    }
-    .links_migs {
-        color: white;
+        padding: 0px 7px;
         text-decoration: none;
-        font-size: 22px;
-        cursor: default;
-        font-family: math;
-    }
-    .vidios {
-        color: red;
-        margin-left: 64%;
-        font-size: 29px;
-        display: block;
-    }
-}
-@media (max-width: 550px){
-    .icon_open {
-        color: white;
-        font-size: 27px;
-        cursor: pointer;
-        margin-bottom: 12px;
-        margin-left: 10px;
-    }
-    .vidios {
-        color: red;
-        margin-left: 58%;
-        font-size: 26px;
-        display: block;
-    }
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 19px;
-        cursor: default;
-        font-family: math;
-    }
-}
-@media (max-width: 450px){
-    .menu_ul ul a {
-        margin: 3px 2px;
-        padding: 0px 9px;
         font-weight: 700;
-        text-transform: uppercase;
-        color: black;
-        display: flex;
-        margin-bottom: 23px;
+        transition: 1s;
     }
 }

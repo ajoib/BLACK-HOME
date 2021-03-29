@@ -7,9 +7,9 @@
 }
 
 
-.dox{
+.dox {
     width: 100%;
-    background: #202020;
+    background: white;
     display: flex;
 }
 
@@ -26,7 +26,7 @@
 }
 .Links-nav{
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -38,17 +38,19 @@
 .Links-nav:hover{
     color: #ff0000;
 }
-.abdulaziz-home{
+.abdulaziz-home {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    width: 239px;
+    height: 36px;
+    margin-left: 48px;
 }
 .img-col{
-    padding: 35px 35px 10px 35px;
+    padding: 39px 35px 10px 35px;
     transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
     cursor: pointer;
-    width: 100%;
-    height: 100%;
+   
 }
 .h-block{
     width: 100%;
@@ -86,12 +88,16 @@ p{
 }
 .icon-gh-div{
     width: 100%;
-    background: #202020;
+    background: whitesmoke;
     justify-content: center;
     display: none;
 }
 
-
+.abdulaziz-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -99,19 +105,22 @@ p{
 
 
 @media (max-width: 650px) {
+    
     .abdulaziz-home {
         display: flex;
         justify-content: center;
         cursor: pointer;
-        width: 192px;
-        height: 79px;
+        width: 173px;
+        height: 25px;
     }
+    
     p {
         font-size: 15px;
         font-weight: 700;
         color: black;
         text-align: center;
     }
+    
     .h2 {
         text-align: center;
         font-size: 23px !important;
@@ -119,82 +128,108 @@ p{
         font-weight: 500;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    
     .section {
         width: 100%;
         background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
         height: 374px;
     }
+    .nav_menu {
+        width: 100%;
+        height: 52px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
     
 }
 
 @media (max-width: 550px) {
+    
     .Links-nav {
         align-items: center;
-        color: white;
+        color: #202020;
         font-size: 11px;
         font-weight: 700;
-        /* text-transform: uppercase; */
         text-decoration: none;
         margin: 0 10px;
         transition: 0.5s;
         cursor: pointer;
     }
+    
     .abdulaziz-home {
         display: flex;
         justify-content: center;
         cursor: pointer;
-        width: 160px;
-        height: 80px;
+        width: 142px;
+        height: 28px;
     }
+    
     .section {
         width: 100%;
         background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
         height: 300px;
     }
+    .nav_menu {
+        width: 100%;
+        height: 52px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+    }
 }
 
 @media (max-width: 480px) {
+    
     .icon-gh-div {
         height: 5vh;
         align-items: center;
         width: 100%;
-        background: #202020;
+        background: #ffffff;
         justify-content: center;
         display: flex;
     }
+    
     .abdulaziz-home-2 {
         display: block;
-        width: 203px;
-        height: 68px;
+        width: 195px;
+        height: 24px;
         margin-top: 17px;
     }
+    
     .nav_menu {
         width: 100%;
-        height: 38px;
+        height: 52px;
         align-items: center;
         display: flex;
         justify-content: center;
+        padding-top: 10px;
     }
+    
     .Links-nav {
         align-items: center;
-        color: white;
+        color: black;
         font-size: 13px;
         font-weight: 600;
-        /* text-transform: uppercase; */
         text-decoration: none;
         margin: 0 10px;
         transition: 0.5s;
         cursor: pointer;
     }
+    
     .d-block {
         width: 100%;
         height: 71vh;
     }
+    
     .img-col {
-        padding: 16px 13px 10px 13px;
+        padding: 39px 13px 10px 13px;
         transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
         cursor: pointer;
     }
+    
     .abdulaziz-home {
         display: none;
         justify-content: center;
@@ -202,29 +237,33 @@ p{
         width: 160px;
         height: 80px;
     }
+    
 }
 
 @media (max-width: 454px) {
     .abdulaziz-home-2 {
         display: block;
         width: 188px;
-        height: 60px;
+        height: 24px;
         margin-top: 18px;
     }
+    
     .icon-gh-div {
         height: 4vh;
         align-items: center;
         width: 100%;
-        background: #202020;
+        background: #ffffff;
         justify-content: center;
         display: flex;
     }
+    
     .nav_menu {
         width: 100%;
-        height: 43px;
+        height: 52px;
         align-items: center;
         display: flex;
         justify-content: center;
+        padding-top: 10px;
     }
     
     .abdulaziz-home {
@@ -235,35 +274,39 @@ p{
         height: 83px;
         align-items: center;
     }
+    
     .Links-nav {
         align-items: center;
-        color: white;
+        color :black;
         font-size: 12px;
         font-weight: 600;
-        /* text-transform: uppercase; */
         text-decoration: none;
         margin: 0px 6px;
         transition: 0.5s;
         cursor: pointer;
     }
+    
     .d-block {
         width: 100%;
         height: 72vh;
     }
     
     .img-col {
-        padding: 13px 10px 7px 10px;
+        padding: 39px 10px 7px 10px !important;
         transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
         cursor: pointer;
     }
+    
     .section {
         width: 100%;
         background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
         height: 254px;
     }
+    
 }
 
 @media (max-width: 400px) {
+    
     .abdulaziz-home {
         display: none;
         justify-content: center;
@@ -272,34 +315,38 @@ p{
         height: 63px;
         align-items: center;
     }
+    
     .nav_menu {
         width: 100%;
-        height: 47px;
+        height: 52px;
         align-items: center;
         display: flex;
         justify-content: center;
-        /* position: fixed; */
+        padding-top: 10px;
     }
+    
     .Links-nav {
         align-items: center;
-        color: white;
+        color: #202020;
         font-size: 12px;
         font-weight: 700;
-        /* text-transform: uppercase; */
         text-decoration: none;
         margin: 0px 6px;
         transition: 0.5s;
         cursor: pointer;
     }
+    
     .d-block {
         width: 100%;
-        height: 83vh;
+        height: 74vh;
     }
+    
     .img-col {
-        padding: 25px 25px 10px 25px;
+        padding: 39px 25px 10px 25px;
         transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
         cursor: pointer;
     }
+    
     .section {
         width: 100%;
         background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;

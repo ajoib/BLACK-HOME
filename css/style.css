@@ -10,7 +10,6 @@
 .dox{
     width: 100%;
     background: #202020;
-    border: 1px black solid;
     display: flex;
 }
 
@@ -48,6 +47,8 @@
     padding: 35px 35px 10px 35px;
     transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
     cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 .h-block{
     width: 100%;
@@ -83,7 +84,12 @@ p{
     background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
     height: 531px;
 }
-
+.icon-gh-div{
+    width: 100%;
+    background: #202020;
+    justify-content: center;
+    display: none;
+}
 
 
 
@@ -148,9 +154,23 @@ p{
 }
 
 @media (max-width: 480px) {
+    .icon-gh-div {
+        height: 5vh;
+        align-items: center;
+        width: 100%;
+        background: #202020;
+        justify-content: center;
+        display: flex;
+    }
+    .abdulaziz-home-2 {
+        display: block;
+        width: 203px;
+        height: 68px;
+        margin-top: 17px;
+    }
     .nav_menu {
         width: 100%;
-        height: 52px;
+        height: 38px;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -158,7 +178,7 @@ p{
     .Links-nav {
         align-items: center;
         color: white;
-        font-size: 17px;
+        font-size: 13px;
         font-weight: 600;
         /* text-transform: uppercase; */
         text-decoration: none;
@@ -168,10 +188,10 @@ p{
     }
     .d-block {
         width: 100%;
-        height: 90vh;
+        height: 71vh;
     }
     .img-col {
-        padding: 20px 20px 10px 20px;
+        padding: 16px 13px 10px 13px;
         transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
         cursor: pointer;
     }
@@ -185,10 +205,23 @@ p{
 }
 
 @media (max-width: 454px) {
-    
+    .abdulaziz-home-2 {
+        display: block;
+        width: 188px;
+        height: 60px;
+        margin-top: 18px;
+    }
+    .icon-gh-div {
+        height: 4vh;
+        align-items: center;
+        width: 100%;
+        background: #202020;
+        justify-content: center;
+        display: flex;
+    }
     .nav_menu {
         width: 100%;
-        height: 55px;
+        height: 43px;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -205,7 +238,7 @@ p{
     .Links-nav {
         align-items: center;
         color: white;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 600;
         /* text-transform: uppercase; */
         text-decoration: none;
@@ -215,18 +248,18 @@ p{
     }
     .d-block {
         width: 100%;
-        height: 89vh;
+        height: 72vh;
     }
     
     .img-col {
-        padding: 20px 20px 10px 20px;
+        padding: 13px 10px 7px 10px;
         transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
         cursor: pointer;
     }
     .section {
         width: 100%;
         background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
-        height: 228px;
+        height: 254px;
     }
 }
 

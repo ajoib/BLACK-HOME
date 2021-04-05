@@ -1,355 +1,457 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
 }
-
-
-.dox {
+.header{
     width: 100%;
     background: white;
-    display: flex;
+    flex-wrap: wrap;
 }
-
-.nav_menu{
+.mix-container{
     width: 100%;
-    height: 80px;
-    align-items: center;
+    background: white;
+}
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    background: #00000090;
+}
+.ul-mix{
+    margin-bottom: 0px !important;
+    width: 100%;
     display: flex;
     justify-content: center;
-}
-.d-block{
-    width: 100%;
-    height: 100vh;
-}
-.Links-nav{
     align-items: center;
+}
+.link-mix{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.active{
+    color: red !important;
+}
+.link-mix:hover{
+    color: red;
+}
+.central-block-home{
+    width: 100%;
+    height: 511px;
+    background: url(../img/img-1.jpg)no-repeat center center / cover;
+}
+.title-1{
+    cursor: pointer;
+    font-size: 32px;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+.title-2{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.links-div{
+    padding-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
     color: rgb(0, 0, 0);
     font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
-    margin: 0 10px;
-    transition: 0.5s;
-    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    border: 1px black solid;
+    padding: 6px;
+    border-radius: 12px;
+    transition: 1s;
 }
-.Links-nav:hover{
-    color: #ff0000;
+.links:hover{
+    color: white;
+    background: black;
+    border: white 1px solid;
 }
-.abdulaziz-home {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    width: 239px;
-    height: 36px;
-    margin-left: 48px;
-}
-.img-col{
-    padding: 39px 35px 10px 35px;
-    transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
-    cursor: pointer;
-   
-}
-.h-block{
+.central-home-bagraund{
     width: 100%;
-    flex-wrap: wrap;
-}
-.img-col:hover{
-    transform: scale(1.1);
-}
-p{
-    font-size: 12px;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-}
-.em-block{
-    width: 100%;
-    flex-wrap: wrap;
+    height: 70vh;
+    background: url(../img/img-2.jpg)no-repeat center center / cover;
     display: flex;
 }
-.text-block{
+.div-icon-text{
     width: 100%;
-    padding: 28px 0;
-}
-.h2{
-    text-align: center;
-    font-size: 18px !important;
-    color: black;
-    font-weight: 500;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.section{
-    width: 100%;
-    background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
-    height: 531px;
-}
-.icon-gh-div{
-    width: 100%;
-    background: whitesmoke;
-    justify-content: center;
-    display: none;
-}
-
-.abdulaziz-div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 250px 0px;
     align-items: center;
 }
 
+.fa-plug, .fa-house-damage, .fa-battery-half{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+.bagraund-p{
+    padding-top: 10px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.central-text-and-links{
+    width: 100%;
+    background: white;
+    height: 30vh;
+    display: flex;
+}
+.div-1, .div-2{
+    padding: 45px 0px 0px 45px;
+}
+.div-title1{
+    margin: 0px !important;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.div-title{
+    margin: 0px !important;
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+.div-link{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    font-weight: 800;
+    padding: 9px;
+    border-radius: 23px;
+    text-decoration: none;
+}
+.div-2-title{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.div-2{
+    width: 780px;
+}
+.Black-central-div{
+    width: 100%;
+    height: 30vh;
+    background: black;
+}
+.black-central-title{
+    padding: 0px !important;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.black-central-title-2{
+    padding: 0px !important;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 45px !important;
+}
+.Black-central-div{
+    padding: 45px 0px 0px 100px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+.div-link-2{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid white;
+    transition: 1s;
+}
+.div-link-2:hover{
+    color: black;
+    background: white;
+}
+.div-vidio{
+    width: 100%;
+    height: 53vh;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.vidiosd{
+    width: 100%;
+}
 
+/***************************************************************************/
 
-/*********************************************************************************************/
-
-
-@media (max-width: 650px) {
-    
-    .abdulaziz-home {
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        width: 173px;
-        height: 25px;
+@media (max-width: 872px) {
+    .central-block-home {
+        width: 100%;
+        height: 511px;
+        background: url(../img/img-1.jpg)no-repeat center center / cover;
     }
-    
-    p {
+    .link-mix {
+        text-decoration: none;
+        margin: 0px 10px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+    .title-1 {
+        cursor: pointer;
+        font-size: 25px;
+        text-align: center;
+        padding: 100px 0px 0px 0px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: black;
+    }
+    .title-2 {
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .links {
+        color: rgb(0, 0, 0);
         font-size: 15px;
-        font-weight: 700;
-        color: black;
-        text-align: center;
-    }
-    
-    .h2 {
-        text-align: center;
-        font-size: 23px !important;
-        color: black;
-        font-weight: 500;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-    .section {
-        width: 100%;
-        background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
-        height: 374px;
-    }
-    .nav_menu {
-        width: 100%;
-        height: 52px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-    }
-    
-}
-
-@media (max-width: 550px) {
-    
-    .Links-nav {
-        align-items: center;
-        color: #202020;
-        font-size: 11px;
-        font-weight: 700;
         text-decoration: none;
-        margin: 0 10px;
-        transition: 0.5s;
-        cursor: pointer;
+        text-transform: uppercase;
+        margin: 0px 15px;
+        border: 3px black solid;
+        padding: 6px;
+        border-radius: 12px;
+        transition: 1s;
+        font-weight: 900;
     }
-    
-    .abdulaziz-home {
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        width: 142px;
-        height: 28px;
-    }
-    
-    .section {
+    .central-home-bagraund {
         width: 100%;
-        background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
-        height: 300px;
-    }
-    .nav_menu {
-        width: 100%;
-        height: 52px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding-top: 0px;
-    }
-}
-
-@media (max-width: 480px) {
-    
-    .icon-gh-div {
-        height: 5vh;
-        align-items: center;
-        width: 100%;
-        background: #ffffff;
-        justify-content: center;
+        height: 58vh;
+        background: url(../img/img-2.jpg)no-repeat center center / cover;
         display: flex;
     }
-    
-    .abdulaziz-home-2 {
-        display: block;
-        width: 195px;
-        height: 24px;
-        margin-top: 17px;
-    }
-    
-    .nav_menu {
-        width: 100%;
-        height: 52px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
+    .bagraund-p {
         padding-top: 10px;
-    }
-    
-    .Links-nav {
-        align-items: center;
         color: black;
+        text-align: center;
+        text-transform: uppercase;
         font-size: 13px;
-        font-weight: 600;
-        text-decoration: none;
-        margin: 0 10px;
-        transition: 0.5s;
         cursor: pointer;
-    }
-    
-    .d-block {
-        width: 100%;
-        height: 71vh;
-    }
-    
-    .img-col {
-        padding: 39px 13px 10px 13px;
-        transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
-        cursor: pointer;
-    }
-    
-    .abdulaziz-home {
-        display: none;
-        justify-content: center;
-        cursor: pointer;
-        width: 160px;
-        height: 80px;
-    }
-    
-}
-
-@media (max-width: 454px) {
-    .abdulaziz-home-2 {
-        display: block;
-        width: 188px;
-        height: 24px;
-        margin-top: 18px;
-    }
-    
-    .icon-gh-div {
-        height: 4vh;
-        align-items: center;
-        width: 100%;
-        background: #ffffff;
-        justify-content: center;
-        display: flex;
-    }
-    
-    .nav_menu {
-        width: 100%;
-        height: 52px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-    }
-    
-    .abdulaziz-home {
-        display: none;
-        justify-content: center;
-        cursor: pointer;
-        width: 147px;
-        height: 83px;
-        align-items: center;
-    }
-    
-    .Links-nav {
-        align-items: center;
-        color :black;
-        font-size: 12px;
-        font-weight: 600;
-        text-decoration: none;
-        margin: 0px 6px;
-        transition: 0.5s;
-        cursor: pointer;
-    }
-    
-    .d-block {
-        width: 100%;
-        height: 72vh;
-    }
-    
-    .img-col {
-        padding: 39px 10px 7px 10px !important;
-        transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
-        cursor: pointer;
-    }
-    
-    .section {
-        width: 100%;
-        background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
-        height: 254px;
-    }
-    
-}
-
-@media (max-width: 400px) {
-    
-    .abdulaziz-home {
-        display: none;
-        justify-content: center;
-        cursor: pointer;
-        width: 113px;
-        height: 63px;
-        align-items: center;
-    }
-    
-    .nav_menu {
-        width: 100%;
-        height: 52px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-    }
-    
-    .Links-nav {
-        align-items: center;
-        color: #202020;
-        font-size: 12px;
         font-weight: 700;
+    }
+    .div-title {
+        margin: 0px !important;
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding-bottom: 25px;
+    }
+    .div-title1 {
+        margin: 0px !important;
+        color: black;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .div-link {
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 3px solid black;
+        font-weight: 800;
+        padding: 9px;
+        border-radius: 16px;
         text-decoration: none;
-        margin: 0px 6px;
+    }
+    .div-2-title {
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .div-2 {
+        width: 687px;
+    }
+    .Black-central-div {
+        padding: 61px 0px 0px 236px;
+    }
+    .black-central-title {
+        padding: 0px !important;
+        color: white;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .black-central-title-2 {
+        padding: 0px !important;
+        color: white;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 30px !important;
+    }
+    .div-vidio {
+        width: 100%;
+        height: 40vh;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+    .vidiosd {
+        width: 100%;
+    }
+}
+
+@media (max-width: 625px) {
+    .link-mix {
+        text-decoration: none;
+        margin: 0px 8px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 15px;
+        text-transform: uppercase;
         transition: 0.5s;
+    }
+    .title-1 {
         cursor: pointer;
+        font-size: 23px;
+        text-align: center;
+        padding: 173px 0px 0px 0px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: black;
     }
-    
-    .d-block {
-        width: 100%;
-        height: 74vh;
-    }
-    
-    .img-col {
-        padding: 39px 25px 10px 25px;
-        transition: opacity 0.5s ease, transform 2s cubic-bezier(0, 0, 0.44, 1.18);
+    .title-2 {
         cursor: pointer;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 900;
+        text-align: center;
     }
-    
-    .section {
+    .links {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0px 9px;
+        border: 3px black solid;
+        padding: 6px;
+        border-radius: 12px;
+        transition: 1s;
+        font-weight: 900;
+    }
+    .div-icon-text {
         width: 100%;
-        background: url(../img/img-central-room/section-bagraund.png) no-repeat center center / cover;
-        height: 260px;
+        display: flex;
+        flex-direction: column;
+        padding: 139px 0px;
+        align-items: center;
+    }
+    .central-home-bagraund {
+        width: 100%;
+        height: 43vh;
+        background: url(../img/img-2.jpg)no-repeat center center / cover;
+        display: flex;
+    }
+    .div-title1 {
+        margin: 0px !important;
+        color: black;
+        font-size: 19px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .div-title {
+        margin: 0px !important;
+        color: black;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding-bottom: 25px;
+    }
+    .div-2 {
+        width: 681px;
+    }
+    .div-1, .div-2 {
+        padding: 45px 0px 0px 33px;
+    }
+    .div-link {
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 3px solid black;
+        font-weight: 800;
+        padding: 9px;
+        border-radius: 12px;
+        text-decoration: none;
+    }
+    .Black-central-div {
+        padding: 54px 0px 0px 116px;
+    }
+    .black-central-title {
+        padding: 0px !important;
+        color: white;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .black-central-title-2 {
+        padding: 0px !important;
+        color: white;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 28px !important;
+    }
+    .div-link-2 {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 12px;
+        border: 1px solid white;
+        transition: 1s;
+    }
+    .div-vidio {
+        width: 100%;
+        height: 22vh;
+        cursor: pointer;
+        flex-wrap: wrap;
     }
 }
